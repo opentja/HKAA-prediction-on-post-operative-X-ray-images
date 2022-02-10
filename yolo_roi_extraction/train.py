@@ -57,8 +57,8 @@ def train():
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S").split(' ')
     hour = now[1].split(':')[0]
     date = now[0]
-    wdir = '/infodev1/phi-data/shi/kneeX-ray/experiment202103/results/weights/'  # weights dir
-    wdir2 = '/infodev1/phi-data/shi/kneeX-ray/experiment202103/results/'  # weights dir
+    wdir = '***experiment202103/results/weights/'  # weights dir
+    wdir2 = '***experiment202103/results/'  # weights dir
     if not os.path.exists(wdir):
         os.makedirs(wdir)
 
