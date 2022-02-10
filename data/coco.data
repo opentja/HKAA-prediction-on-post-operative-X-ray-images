@@ -1,7 +1,0 @@
-classes=8
-train=/infodev1/phi-data/shi/kneeX-ray/experiment202103/data/train.txt
-valid=/infodev1/phi-data/shi/kneeX-ray/experiment202103/data/val.txt
-test=/infodev1/phi-data/shi/kneeX-ray/experiment202103/data/test.txt
-names=/infodev1/phi-projects/dhs/workspace-shi/kneeAlignment/yolo&landmark/data/coco.names
-backup=backup/
-eval=coco
