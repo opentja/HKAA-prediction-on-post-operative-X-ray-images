@@ -220,7 +220,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='test.py')
     parser.add_argument('--cfg', type=str, default='cfg/yolov3-spp.cfg', help='*.cfg path')
     parser.add_argument('--data', type=str, default='data/coco.data', help='*.data path')
-    parser.add_argument('--weights', type=str,default='/infodev1/phi-data/shi/kneeX-ray/experiment202103/results/weights/', help='path to weights file')
+    parser.add_argument('--weights', type=str,default='***experiment202103/results/weights/', help='path to weights file')
     parser.add_argument('--batch_size', type=int, default=2, help='size of each image batch')
     parser.add_argument('--img-size', type=int, default=1024, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.2, help='object confidence threshold')
