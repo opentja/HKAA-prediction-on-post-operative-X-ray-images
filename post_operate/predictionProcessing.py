@@ -159,9 +159,9 @@ def last(unetOutputCSVPath, roiCsvPath, annotationCsvPath, visualizationPath):
 
 
 roiCsvPath = './roi.csv'
-unetOutputCSVPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/'
-annnotationCsvPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'
-imageFolderPath = '/infodev1/phi-data/shi/kneeX-ray/experiment202103/data/images/'
-# visualizationPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/predictionVisualization/'
-visualizationPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/big/'
+unetOutputCSVPath = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/'
+annnotationCsvPath = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'
+imageFolderPath = 'kneeX-ray/experiment202103/data/images/'
+# visualizationPath = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/predictionVisualization/'
+visualizationPath = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/experimentResult/big/'
 last(unetOutputCSVPath, roiCsvPath, annnotationCsvPath, visualizationPath)
