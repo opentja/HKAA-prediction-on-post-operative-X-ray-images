@@ -70,15 +70,15 @@ class TrainTestPrediction(object):
                 self.trainSet, self.validSet, self.testSet = random_split(dataset, [trainNumber, validNumber, testNumber])
 
         else:
-            annotationPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'+args.flag+'/annotation.csv'
-            predImageFolder = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/'
+            annotationPath = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'+args.flag+'/annotation.csv'
+            predImageFolder = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/'
             dataset = HeatmapDataset(csvFile=annotationPath, rootDir=predImageFolder, resolution=self.resolution,
                                     flag=args.flag, transform=None,prediction=1,
                                      originalUNet=self.originalUNet,
                                      deepWiseUNet=self.deepWiseUNet,
                                      deepWiseUNetTwoInput=self.deepWiseUNetTwoInput,
                                      twoInputUNet = self.twoInputUNet)
-            self.predImageFolder = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'+args.flag+'/image/'
+            self.predImageFolder = 'kneeX-ray/predictionBasedYoloOuput/unAnnotatedImage/data/'+args.flag+'/image/'
             self.predLoader = DataLoader(dataset=dataset, batch_size=self.batchSize, shuffle=True)
             self.predictionResultPath = predImageFolder +'/'+ +modelName+'/experimentResult/' + self.flag + '/prediction/'
             if not os.path.exists(self.predictionResultPath+'image/'):
