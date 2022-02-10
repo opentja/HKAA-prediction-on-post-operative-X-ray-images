@@ -38,8 +38,8 @@ def select_device(device='', apex=True, batch_size=None):
 def main():
     parser = argparse.ArgumentParser(description='CNN Example')
     parser.add_argument('--rootDir', type=str,
-                        default='/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma',
-                        metavar='/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma',
+                        default='kneeX-ray/predictionBasedYoloOuput/512Sigma',
+                        metavar='kneeX-ray/predictionBasedYoloOuput/512Sigma',
                         help='experiment data folder path')
     parser.add_argument('--batchSize', type=int, default=2, metavar='2',
                         help='input batch size for training (default: 2)')
