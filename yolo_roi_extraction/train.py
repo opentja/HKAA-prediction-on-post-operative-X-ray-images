@@ -456,7 +456,7 @@ if __name__ == '__main__':
     parser.add_argument('--evolve', action='store_true', help='evolve hyperparameters')
     parser.add_argument('--bucket', type=str, default='', help='gsutil bucket')
     parser.add_argument('--cache-images', action='store_true', help='cache images for faster training')
-    parser.add_argument('--weights', type=str, default='/infodev1/phi-projects/dhs/workspace-shi/yolov3/weights/ultralytics68.pt', help='initial weights')
+    parser.add_argument('--weights', type=str, default='=yolov3/weights/ultralytics68.pt', help='initial weights')
     parser.add_argument('--arc', type=str, default='default', help='yolo architecture')  # defaultpw, uCE, uBCE
     parser.add_argument('--prebias', action='store_true', help='transfer-learn yolo biases prior to training')
     parser.add_argument('--name', default='', help='renames results.txt to results_name.txt if supplied')
