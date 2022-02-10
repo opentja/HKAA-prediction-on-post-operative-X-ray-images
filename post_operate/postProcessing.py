@@ -167,7 +167,7 @@ def plotLandmark(hipDF, kneeDF, ankleDF, imageFolder, visualizationPath, sigma):
     distanceInfo = {'imageName': imageNameList, 'hipDiff': hipDiffList, 'kneeDiff': kneeDiffList,
                 'ankleDiff': ankleDiffList}
     disDF = pd.DataFrame(distanceInfo)
-    disDF.to_csv('/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma'+str(sigma)+'/postDisDiff.csv',index=False)
+    disDF.to_csv('***predictionBasedYoloOuput/512Sigma'+str(sigma)+'/postDisDiff.csv',index=False)
     disDF.to_csv('./postDisDiff.csv',
                  index=False)
     predInfo = {'imageName': imageNameList, 'predLeftAngle': predLeftAngleList, 'predAngleAngle': predRightAngleList,
@@ -197,10 +197,10 @@ def last(yoloOutputCSVPath, unetOutputCSVPath,rescaleInfoCSVPath, sigma):
     plotLandmark(hipDF, kneeDF, ankleDF, imageFolderPath, visualizationPath, sigma)
 
 yoloOutputCSVPath = './roi.csv'
-unetOutputCSVPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma'
-rescaleInfoCSVPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma'
-imageFolderPath = '/infodev1/phi-data/shi/kneeX-ray/experiment202103/data/images/'
-visualizationPath = '/infodev1/phi-data/shi/kneeX-ray/predictionBasedYoloOuput/512Sigma'
+unetOutputCSVPath = 'kneeX-ray/predictionBasedYoloOuput/512Sigma'
+rescaleInfoCSVPath = 'kneeX-ray/predictionBasedYoloOuput/512Sigma'
+imageFolderPath = 'kneeX-ray/experiment202103/data/images/'
+visualizationPath = 'kneeX-ray/predictionBasedYoloOuput/512Sigma'
 
 
 # last(yoloOutputCSVPath, unetOutputCSVPath,rescaleInfoCSVPath, sigma=10)
